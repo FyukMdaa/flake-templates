@@ -21,10 +21,6 @@
           packages = [
             importNpmLock.hooks.linkNodeModulesHook
             nodejs
-            pkgs.zulu
-            pkgs.leiningen
-            pkgs.clojure-lsp
-            pkgs.babashka
           ];
           npmDeps = importNpmLock.buildNodeModules {
             inherit npmRoot nodejs;
